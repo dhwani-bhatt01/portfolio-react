@@ -1,0 +1,12 @@
+@import "./../../../../variables.scss";
+
+.projects {
+	margin: 8rem auto;
+	&__cards > * {
+		margin-bottom: 3rem;
+	}
+	&__button {
+		display: flex;
+		justify-content: center;
+	}
+}

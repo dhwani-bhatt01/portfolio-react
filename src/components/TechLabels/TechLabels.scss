@@ -1,0 +1,9 @@
+@import "./../../variables.scss";
+
+.labels {
+  background: $primary-color-lighter;
+  color: $primary-color-darker;
+  border-radius: 1rem;
+  padding: 0.06rem 0.6rem;
+  font-size: 0.65rem;
+}

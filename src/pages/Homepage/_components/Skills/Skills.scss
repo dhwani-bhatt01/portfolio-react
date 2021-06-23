@@ -1,0 +1,55 @@
+@import "./../../../../variables.scss";
+
+.skills {
+  margin: 8rem auto;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__skillsImg {
+    width: 35%;
+  }
+  &__right-description {
+    width: 50%;
+  }
+  &__description {
+    text-align: justify;
+    font-size: 0.85rem;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  &__icon {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    &__content {
+      flex-direction: column;
+    }
+    &__skillsImg {
+      width: 60%;
+      margin-bottom: 2.5rem;
+    }
+    &__right-description {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    &__icon {
+      height: 1.8rem;
+      width: 1.8rem;
+    }
+  }
+  @media only screen and (max-width: 370px) {
+    &__icon {
+      height: 1.3rem;
+      width: 1.3rem;
+    }
+  }
+}

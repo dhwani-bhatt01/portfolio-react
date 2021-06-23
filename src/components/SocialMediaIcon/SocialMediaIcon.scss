@@ -1,0 +1,11 @@
+// Default class, it'll be applied to all the icons.
+.icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0 1rem;
+}
+
+.icon:hover {
+	transform: scale(1.3);
+	transition: transform 0.5s ease-in-out;
+}

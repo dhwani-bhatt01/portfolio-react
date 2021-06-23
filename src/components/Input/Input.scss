@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+
+.input-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.label {
+	color: $primary-color-darker;
+	font-weight: 600;
+	margin-bottom: 0.4rem;
+	font-size: 0.9rem;
+}
+
+.textfield {
+	border-radius: 0.25rem;
+	padding: 0.3rem 0.5rem;
+	margin-bottom: 0.8rem;
+	outline: none;
+	border: 2px $primary-color solid;
+	&::placeholder {
+		font-size: 0.7rem;
+	}
+}
+
+.textarea {
+	border-radius: 0.25rem;
+	padding: 0.3rem 0 0 0.5rem;
+	border: 2px $primary-color solid;
+	resize: none;
+	outline: none;
+	&::placeholder {
+		text-align: left;
+		font-size: 0.7rem;
+	}
+}

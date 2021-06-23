@@ -1,0 +1,43 @@
+@import "../../../../variables.scss";
+
+.services {
+	margin: 8rem auto;
+
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		gap: 3rem;
+		margin-top: 3rem;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 17.8rem;
+	}
+
+	&__card-icon {
+		width: 25%;
+		margin-bottom: 1rem;
+	}
+
+	&__card-heading {
+		color: $primary-color-darker;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+	}
+
+	&__card-content {
+		text-align: center;
+		color: $primary-color-darker;
+	}
+
+	// Media Query
+	@media only screen and (max-width: 960px) {
+		&__cards {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+}

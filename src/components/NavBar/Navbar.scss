@@ -1,0 +1,90 @@
+@import "../../variables.scss";
+
+.bgColor {
+	background: $primary-color;
+	transition: background 0.5s ease;
+}
+.bgTransparent {
+	background: transparent;
+	transition: background 0.5s ease;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		font-size: 1.5rem;
+		font-family: "Pacifico", cursive;
+		font-weight: 100;
+		color: $white;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		padding: 1.2rem 0;
+	}
+
+	&__item {
+		color: $white;
+		margin-left: 2rem;
+	}
+
+	&__menuIcon {
+		display: none;
+	}
+
+	// Media Query
+	@media only screen and (max-width: 900px) {
+		&__list {
+			position: absolute;
+			top: 64px;
+			right: 0;
+			bottom: 0;
+			left: -100%;
+			background-color: $primary-color;
+			height: calc(100vh - 64px);
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			text-transform: uppercase;
+			opacity: 0;
+			font-size: 1.5rem;
+		}
+
+		&__list.active {
+			left: 0;
+			opacity: 1;
+			transition: all 0.5s ease;
+			z-index: 1;
+		}
+
+		&__item {
+			padding: 1.2rem 0;
+			margin: 0;
+		}
+
+		&__menuIcon {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			width: 2rem;
+			height: 2rem;
+			margin: 1rem 0;
+		}
+
+		&__closemenu {
+			height: 1.5rem;
+			width: 1.5rem;
+		}
+	}
+}

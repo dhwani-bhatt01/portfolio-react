@@ -1,4 +1,4 @@
-import Blog1 from "./../../../../../assets/teenvoyageimg.jpg";
+import Blog1 from "./../../../../../assets/teenvoyageimg.webp";
 // import Blog2 from "./../../../../../assets/3i'simg.jpg";
 // import Blog3 from "./../../../../../assets/thirteethoughtsimg.jpeg";
 

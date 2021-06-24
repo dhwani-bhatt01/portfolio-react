@@ -1,7 +1,7 @@
 import React from "react";
 import TechLabels from "../../../../../components/TechLabels/TechLabels";
 import Button from "../../../../../components/Button/Button";
-import projectImage from "./../../../../../assets/crown-clothing.png";
+import projectImage from "./../../../../../assets/crown-clothing.webp";
 import { ReactComponent as GithubIcon } from "./../../../../../assets/github.svg";
 import "./ProjectsCard.scss";
 
